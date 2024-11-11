@@ -1,4 +1,7 @@
 package com.example.examen2;
+
+import java.util.ArrayList;
+
 public class Calculadora {
 
     // Método para convertir el número a la base seleccionada (0: Binario, 1: Octal, 2: Decimal, 3: Hexadecimal)
@@ -68,4 +71,14 @@ public class Calculadora {
                 throw new IllegalArgumentException("Base de destino no soportada");
         }
     }
+    //Método para encontrar elemento en lista
+    public static boolean Encuentra(ArrayList<Integer> list, int element){
+        for (int i = 0; i < list.size(); i++){
+            if (list.get(i) == element){
+                return true;
+            }
+        }
+        return false;
+    }
 }
+
