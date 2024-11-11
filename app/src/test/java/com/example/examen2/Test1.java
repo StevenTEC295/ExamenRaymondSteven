@@ -1,6 +1,7 @@
 package com.example.examen2;
 import static org.junit.Assert.*;
 import org.junit.Test;
+import java.util.ArrayList;
 public class Test1{
     // Pruebas unitarias para el método convertirNumero
     @Test
@@ -68,6 +69,15 @@ public class Test1{
         public void testConvertirADestinoHexadecimal() {
             assertEquals("El decimal 255 debería ser ff en hexadecimal", "ff", Calculadora.convertirADestino(255, 3));
         }
+        @Test
+        public void testEncuentraElementoPresente() {
+        ArrayList<Integer> lista = new ArrayList<>();
+        lista.add(1);
+        lista.add(2);
+        lista.add(3);
+        assertTrue("El elemento 2 debería estar en la lista", Calculadora.Encuentra(lista, 2));
+    }
+
 
 
 }
