@@ -2,7 +2,7 @@ package com.example.examen2;
 import static org.junit.Assert.*;
 import org.junit.Test;
 import java.util.ArrayList;
-/**public class Test1{
+public class Test1{
     // Pruebas unitarias para el método convertirNumero
     @Test
     public void testConvertirNumeroBinario() {
@@ -80,5 +80,5 @@ import java.util.ArrayList;
 
 
 
-}**/
+}
 
