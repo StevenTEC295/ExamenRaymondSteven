@@ -17,7 +17,7 @@ public class Test1{
     // Pruebas unitarias para el método realizarOperacion
     @Test
     public void testRealizarOperacionSuma() {
-        assertEquals("La suma de 5 + 3 debería ser 8",9, Calculadora.realizarOperacion(5, 3, "+"));
+        assertEquals("La suma de 5 + 3 debería ser 8",8, Calculadora.realizarOperacion(5, 3, "+"));
     }
 
     @Test
