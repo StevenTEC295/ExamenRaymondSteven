@@ -2,9 +2,9 @@ name: TestCI
 
 on:
   push:
-    branches: ['develop','TestCI' ]
+    branches: ['develop' ]
   pull_request:
-    branches: ['develop','TestCI']
+    branches: ['develop']
 
 jobs:
   build:
