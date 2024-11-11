@@ -34,5 +34,41 @@ public class Test1{
     public void testConvertirADestinoBaseInvalida() {
         assertThrows("Base de destino inválida debería lanzar IllegalArgumentException",IllegalArgumentException.class, () -> Calculadora.convertirADestino(5, 4));
     }
+
+
+        // Pruebas unitarias para el método convertirNumero
+        @Test
+        public void testConvertirNumeroOctal() {
+            assertEquals("El octal 12 debería ser 10 en decimal", 10, Calculadora.convertirNumero("12", 1));
+        }
+
+        @Test
+        public void testConvertirNumeroDecimalNegativo() {
+            assertEquals("El número decimal -15 debería ser -15 en decimal", -15, Calculadora.convertirNumero("-15", 2));
+        }
+
+        // Pruebas unitarias para el método realizarOperacion
+        @Test
+        public void testRealizarOperacionRestaPositivos() {
+            assertEquals("La resta de 10 - 3 debería ser 7", 7, Calculadora.realizarOperacion(10, 3, "-"));
+        }
+
+        @Test
+        public void testRealizarOperacionMultiplicacionNegativos() {
+            assertEquals("La multiplicación de -4 * -2 debería ser 8", 8, Calculadora.realizarOperacion(-4, -2, "*"));
+        }
+
+        // Pruebas unitarias para el método convertirADestino
+        @Test
+        public void testConvertirADestinoOctal() {
+            assertEquals("El decimal 25 debería ser 31 en octal", "31", Calculadora.convertirADestino(25, 1));
+        }
+
+        @Test
+        public void testConvertirADestinoHexadecimal() {
+            assertEquals("El decimal 255 debería ser ff en hexadecimal", "ff", Calculadora.convertirADestino(255, 3));
+        }
+
+
 }
 
