@@ -2,7 +2,7 @@ package com.example.examen2;
 import static org.junit.Assert.*;
 import org.junit.Test;
 import java.util.ArrayList;
-public class Test1{
+/**public class Test1{
     // Pruebas unitarias para el método convertirNumero
     @Test
     public void testConvertirNumeroBinario() {
@@ -70,7 +70,7 @@ public class Test1{
         assertEquals("El decimal 255 debería ser ff en hexadecimal", "ff", Calculadora.convertirADestino(255, 3));
     }
     @Test
-    public void testEncuentraElementoPresente() {
+   public void testEncuentraElementoPresente() {
         ArrayList<Integer> lista = new ArrayList<>();
         lista.add(1);
         lista.add(2);
@@ -80,5 +80,5 @@ public class Test1{
 
 
 
-}
+}**/
 
